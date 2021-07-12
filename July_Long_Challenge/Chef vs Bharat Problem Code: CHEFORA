@@ -1,0 +1,21 @@
+#include<bits/stdc++.h>
+using namespace std;
+#define lo long long
+
+
+lo chefora_num(lo n){
+    lo chefno=n;
+    lo no=0;
+    if(n<10){
+        no=chefno;
+    }
+    else if(n>=10){
+        n=n/10;
+        while(n!=0){
+            chefno=chefno*10+n%10;
+            n=n/10;
+        }
+        no=chefno;
+    }
+    return no;
+}
