@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+
+   int T,d,x,y,z,max=0;
+   cin>>T;
+   while(T--){
+       cin>>d>>x>>y>>z;
+       max=x*7;
+       int temp=d*y+(7-d)*z;
+       if(temp>max)
+       max=temp;
+       cout<<max<<"\n";
+   }
+	return 0;
+}
