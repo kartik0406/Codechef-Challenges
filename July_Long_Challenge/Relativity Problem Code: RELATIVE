@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int T,g,c,height=0;
+    cin>>T;
+    while(T--){
+        cin>>g>>c;
+        height=c*c/(2*g);
+        cout<<height<<"\n";
+    }
+	return 0;
+}
