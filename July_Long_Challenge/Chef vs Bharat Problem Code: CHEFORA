@@ -19,3 +19,18 @@ lo chefora_num(lo n){
     }
     return no;
 }
+lo exonent_m(lo p, lo h ){
+    lo result=1;
+    while(h!=0){
+        if(h%2==0){
+            p=((p%1000000007)*(p%1000000007))%1000000007;
+            h=floor(h/2);
+        }
+        else{
+            result=((result%1000000007)*(p%1000000007))%1000000007;
+            h=h-1;
+        }
+    }
+    return result;
+}
+
