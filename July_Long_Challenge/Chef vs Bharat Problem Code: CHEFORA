@@ -33,4 +33,22 @@ lo exonent_m(lo p, lo h ){
     }
     return result;
 }
-
+int main(){
+   
+    lo chef[100001]={0};
+    lo arr[100001]={0};
+    for(lo i=1;i<=100001;i++){
+        chef[i]=chefora_num(i);
+        arr[i]=arr[i-1]+chef[i];
+    }
+    lo t;
+    cin>>t;
+    while(t--){
+        lo l,r;
+        cin>>l>>r;
+        lo d=arr[r]-arr[l];
+        cout<<exonent_m(chef[l],d)<<"\n";
+        
+    }
+    return 0;
+}
