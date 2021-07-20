@@ -19,7 +19,7 @@ lo chefora_num(lo n){
     }
     return no;
 }
-lo exonent_m(lo p, lo h ){
+lo exonent_m(lo p, lo h ) {
     lo result=1;
     while(h!=0){
         if(h%2==0){
