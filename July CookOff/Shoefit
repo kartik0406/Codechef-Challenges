@@ -5,7 +5,7 @@ int main() {
 
     int T,A,B,C;
     cin>>T;
-    while(T--){
+    while(T--) {
         cin>>A;
         cin>>B;
         cin>>C;
